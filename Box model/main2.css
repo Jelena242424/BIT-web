@@ -1,0 +1,49 @@
+.first {
+    list-style-type: circle;
+}
+
+.second {
+    list-style-type: square;
+}
+
+.third {
+    list-style-type: upper-alpha;
+}
+
+.fourth {
+    list-style-type: lower-roman;
+}
+
+.fifth {
+    list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIl9CeoicdPJe2XZpHxrEzrUB_bu7EJ0YsoQ3IhK1cF6l72Zuh8A);
+    width: 200px;
+}
+
+.sixth {
+    list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlQabZNLb7IQZcpSl9xru1ZRABVqz6yRCDbd5ub_hTrdlT3QPeWg);
+    width: 200px;
+    list-style-position: inside;
+    
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.one {
+    background-color:  red;
+}  
+
+td {
+    padding: 10px 0;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+tr:nth-child(odd) {
+    background-color: gray;
+}
