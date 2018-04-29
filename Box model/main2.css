@@ -32,18 +32,24 @@ table {
     border-spacing: 0;
 }
 
-.one {
-    background-color:  red;
-}  
-
 td {
-    padding: 10px 0;
+    padding: 10px 5px;;
+}
+
+tr:nth-child(odd) {
+    background-color: gray;
+    cursor: crosshair;
 }
 
 tr:hover {
     background-color: yellow;
 }
 
-tr:nth-child(odd) {
-    background-color: gray;
-}
+
+table .one {
+    background-color:  red;
+    padding: 5px 3px;
+    font-size: 16px;
+    color: white;
+
+}  
