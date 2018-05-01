@@ -11,7 +11,7 @@
 
 .navigation {
     width: 960px;
-    background-color: red; 
+    background-color: #800000; 
     margin-bottom: 1px;
 }
 
@@ -27,15 +27,21 @@
 
 ul li {
     list-style-type: none;
-    color: white;
-    font-size: 16px;
-    padding: 5px 10px;
+    padding: 1px 10px;
     float: left;
 }
 
 ul {
     float: right;
     padding-right: 15px;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .svg-images {
@@ -64,8 +70,11 @@ ul {
 }
 
 .footer {
-    background-color: navy;
+    background-color: #154360;
     padding: 5px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer p {

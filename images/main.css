@@ -1,0 +1,39 @@
+img {
+    display: block;
+}
+
+.img1 {
+    height: 200px;
+   float: right;
+   display: block;
+}
+
+.img2 {
+    width: 200px;
+   margin: 0 auto;
+   display: block;
+   clear: both;
+   
+}
+
+.img3 {
+    height: 200px;
+    width: 200px;
+    float: left;
+    display: block;
+   
+}
+
+body {
+    background-image: url(https://i.ytimg.com/vi/B3_m75gDGqw/maxresdefault.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: cover;
+    
+} 
+
+p {
+    color: white;
+}
