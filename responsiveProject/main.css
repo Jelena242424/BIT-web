@@ -111,6 +111,17 @@
     box-sizing: border-box;
 }
 
+.cf::before,
+.cf::after {
+    content: "";
+    display: block;
+}
+
+.cf::after {
+    clear: both;
+}
+
+}
 body {
     font-family: 'robotoregular';
     padding: 0;
@@ -145,6 +156,8 @@ h3 {
     position: relative;
 }
 
+
+
 .banner .h2Holder {
     text-transform: uppercase;
     color: #fff;
@@ -152,8 +165,14 @@ h3 {
     padding: 0 20px;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
+}
+
+.banner .h2Holder {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .banner .h2Holder h2 {
@@ -221,7 +240,6 @@ header nav ul li a:hover {
 .h3Decoration {
     margin: 0 auto;
     display: table;
-    transform: translateX(10%);
 }
 
 .h3Decoration .line {
@@ -242,11 +260,9 @@ header nav ul li a:hover {
 }
 
 h4 {
-    font-size: 32px;
-    color: #81c3f5;
+    font-size: 28px;
+    color: #5BAFEB;
 }
-
-
 
 .about-image img {
     display: blok;
@@ -258,34 +274,41 @@ h4 {
     list-style-image: url("./images/arrow_bullet.png");
     margin-bottom: 15px;
     font-size: 20px;
-    color: grey;
+    color: #afa8a8;
     letter-spacing: 2px;
     font-weight: 800;
 }
 
 .about__first {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     line-height: 30px;
     font-weight: 500;
     margin-bottom: 40px;
+    color: #353535;
 }
 
 .about ul {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
     padding-left: 20px;
     
 }
 
 h3 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 400;
+}
+
+.people-says {
+    margin-bottom: 90px;
 }
 
 .people-says__list {
     background-color: #81c3f5;
     padding: 25px 15px;
     margin-bottom: 25px;
+    height: 300px;
+    overflow: hidden;
 }
 
 .people-says__list img {
@@ -297,21 +320,30 @@ h3 {
     float: left;
 }
 
+.people-says .h3Decoration {
+    margin-bottom: 20px;
+}
+
 .name-stars {
     float: left;
     padding: 15px 0 0 20px;
     font-weight: bold;
-    
 }
 
 .people-says__list p {
     clear: left;
     color: white;
-   line-height: 30px;
+   line-height: 35px;
    font-size: 20px; 
 }
+
 .fas {
     color: white;
+}
+
+.get-in .h3Decoration,
+.mail .h3Decoration {
+    margin-bottom: 20px;
 }
 
 .get-in-touch {
@@ -320,11 +352,11 @@ h3 {
     height: 200px;
    padding: 30px;
 }
+
 .get-in-touch span {
     width: 100%;
     display: block;
     text-align: center;
-   
 }
 
 .get-in-touch__contact-us {
@@ -353,28 +385,27 @@ h3 {
 
 .connect {
     background-color: #ea5ea0;
-    
 }
+
 .fa-facebook-f,
 .fa-twitter,
 .fa-rss,
 .fa-vk {
-color: white;
-font-size: 25px;
-margin: 0px 20px;
+    color: white;
+    font-size: 25px;
+    margin: 0px 20px;
 }
+
 .get-in-touch__connect-us {
     font-size: 25px;
     text-transform: uppercase;
     color: white;
     margin-bottom: 50px;
-
 }
 
 .address {
     background-color: #479ade;
     height: 160px;
-
 }
 
 .get-in-touch__address{
@@ -391,8 +422,6 @@ margin: 0px 20px;
     background-color: #81c3f5;
     height: 300px;
     padding-top: 60px;
-    
-
 }
 
 .house-image img{
@@ -400,6 +429,10 @@ margin: 0px 20px;
     height: 80%;
     width: 60%;
    margin: 0 auto;
+}
+
+.mail {
+    margin-bottom: 20px;
 }
 
 .container form input{
@@ -420,6 +453,12 @@ margin: 0px 20px;
     padding-top: 7px;
 }
 
+.container input[type=text],
+.container input[type=email],
+.container input[type=phone] {
+    height: 50px;
+}
+
 .container input[type=submit] {
     width: 130px;
     border: 0;
@@ -428,6 +467,7 @@ margin: 0px 20px;
     color: white;
     height: 40px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .mail {
@@ -436,13 +476,145 @@ margin: 0px 20px;
 
 footer {
     background-color: #353333;
+    padding: 50px 0;
 }
 
 footer  a {
     color: white;
+    font-size: 14px;
 }
+
+.nav-wrapper {
+    display: table;
+    margin: 0 auto;
+}
+
 
 footer ul li {
     list-style-type: none;
     display: inline-block;
+    margin: 0 5px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+
+    header h1 span:first-of-type {
+        border: 4px solid white;
+        border-right: none;
+    }
+
+     header nav ul li {
+         display: inline-block;
+         margin: 0 10px;
+         font-size: 14px;
+     }
+
+     header nav ul li a:link {
+         background-color: transparent;
+     }
+
+     nav {
+         position: absolute;
+         top: 20px;
+         right: 15px;
+     }
+
+   .welcome {
+       float: left;
+       width: 50%;
+       padding-right: 10px;
+   }
+
+   .about-image {
+       float: left;
+       width: 50%;
+       padding-top: 50px;
+   }
+
+   .people-says__list {
+    width: calc((100% - 20px) / 2);
+       margin-bottom: 0;
+   }
+
+   .william {
+      float: left;
+   }
+
+   .jennifer {
+       float: right;
+   }
+   
+   .people-says__list-wrapper {
+       margin-bottom: 20px;
+   }
+
+   .get-in-touch {
+       width: 50%;
+       float: left;
+   }
+
+   .address {
+       height: 200px;
+   }
+
+   .house-image {
+       height: 200px;
+       padding-top: 25px;
+       float: left;
+       width: 50%;
+   }
+  
+   .container input[type=text],
+    .container input[type=email],
+    .container input[type=phone] {
+        float: left;
+        width: calc((100% - 20px) / 3);
+    }
+    .container input[type=text],
+    .container input[type=email] {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about,
+    .about-image {
+        width: 32%;
+    }
+
+    .we-make {
+        float: left;
+        padding-left: 20px;
+    }
+
+    .people-says__list-wrapper {
+        width: 64%;
+        float: left;
+        margin-right: 20px;
+    }
+    .selena {
+        float: left;
+        width: 32%;
+        clear: right;
+    }
+
+    .get-in-touch,
+    .house-image {
+        width: 25%;
+    }
+
+    .h3Decoration .line {
+        width: 120px;
+    }
 }
