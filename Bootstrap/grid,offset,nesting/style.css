@@ -1,0 +1,14 @@
+.col-box {
+    background-color: rgb(163, 163, 235);
+}
+
+.rows {
+    margin-bottom: 10px;
+    background: bisque;
+}
+
+.size {
+    height: 80px;
+    align-items: center;
+}
+
