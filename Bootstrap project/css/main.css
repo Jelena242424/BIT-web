@@ -33,4 +33,32 @@
   .navbar-light .nav-button .fa-bars {
     color: #fff; }
 
+.profile-headtitle {
+  background-color: #18bc9c;
+  padding: 64px 0px 0px 0px; }
+  .profile-headtitle img {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 300px; }
+  .profile-headtitle .jumbotron-color {
+    background-color: #18bc9c;
+    margin-bottom: 0px; }
+    .profile-headtitle .jumbotron-color h1 {
+      color: #fff;
+      text-align: center;
+      font-size: 36px; }
+    .profile-headtitle .jumbotron-color p {
+      color: #fff;
+      text-align: center; }
+    .profile-headtitle .jumbotron-color .my4-line {
+      color: #fff;
+      width: 50%;
+      border-top: 2px solid #fff; }
+
+.row img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px; }
+
 /*# sourceMappingURL=main.css.map */

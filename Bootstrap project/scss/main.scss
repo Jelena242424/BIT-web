@@ -41,7 +41,7 @@
         height: 40px;            
         background-color:  $blue-color;
         border: 1px solid white;
-        
+
         &:focus {
                outline: none;
             }
@@ -56,4 +56,41 @@
     }
 }
 
+.profile-headtitle {
+    background-color: $green-color;
+    padding: 64px 0px 0px 0px;
+    img {
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    .jumbotron-color {
+        background-color: $green-color;
+        margin-bottom: 0px;
+        h1 {
+            color: $white-color;
+            text-align: center;
+            font-size: 36px;
+        }
+        p {
+            color: $white-color;
+            text-align: center;
+        }
+        .my4-line {
+            color: $white-color;
+            width: 50%;
+            border-top: 2px solid $white-color;
+        }
+    }
+    
+}
+
+.row {
+    img {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
