@@ -53,6 +53,11 @@
         .fa-bars {
             color: $white-color;
         }
+
+        &.collapsed {
+            background-color: $green-color;
+            border-color: $green-color;
+        }
     }
 }
 

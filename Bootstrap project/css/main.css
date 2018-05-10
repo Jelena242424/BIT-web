@@ -32,6 +32,9 @@
     padding-right: 5px; }
   .navbar-light .nav-button .fa-bars {
     color: #fff; }
+  .navbar-light .nav-button.collapsed {
+    background-color: #18bc9c;
+    border-color: #18bc9c; }
 
 .profile-headtitle {
   background-color: #18bc9c;
