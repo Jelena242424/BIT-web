@@ -73,3 +73,14 @@ function moveNumber(num) {
 function navigateTwoPagesBack () {
     history.go(-2);
 }
+
+function greeting() {
+    alert("Hello!");
+    var person = prompt("How are you today?");
+    if (person.toLowerCase() === "fine") {
+        alert("I am fine, too");
+    }
+}
+
+
+
